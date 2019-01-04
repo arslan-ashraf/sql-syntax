@@ -34,3 +34,8 @@ select column_name_1, column_name_2, column_name_3 from table_name_foo;
 
 -- queries with conditions
 select column_name_1 from table_name_foo where column_name_1 > number_value -- proper type comparisons only
+-- where clause with unknown string values comparison
+where column_name_1 like "%string%"
+-- where clause with multiple comparison values
+where column_name_1 in (list of values or table from subquery)
+
