@@ -31,3 +31,6 @@ select * from table_name;
 
 -- writing queries
 select column_name_1, column_name_2, column_name_3 from table_name_foo;
+
+-- queries with conditions
+select column_name_1 from table_name_foo where column_name_1 > number_value -- proper type comparisons only
