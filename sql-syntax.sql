@@ -39,3 +39,7 @@ where column_name_1 like "%string%"
 -- where clause with multiple comparison values
 where column_name_1 in (list of values or table from subquery)
 
+joins
+select a.column_name_1, b.column_name_2 
+from table_name_foo as a join table_name_bar as b 
+on a.id = b.column_name_1.id 
