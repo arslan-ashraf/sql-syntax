@@ -38,8 +38,28 @@ select column_name_1 from table_name_foo where column_name_1 > number_value -- p
 where column_name_1 like "%string%"
 -- where clause with multiple comparison values
 where column_name_1 in (list of values or table from subquery)
+other conditions
+between, wildcards
 
-joins
+-- joins
 select a.column_name_1, b.column_name_2 
-from table_name_foo as a join table_name_bar as b 
+from table_name_foo as a join table_name_bar as b
 on a.id = b.column_name_1.id 
+left join - everything from left and only matching columns from right 
+right join - same as left except all right and only matching left
+
+-- unions
+select a.column_name_1, ... from table_name_foo as a
+union -- same number of column names
+select b.column_name_2, ... from table_name_bar as b
+
+-- create index
+-- create index index_name on table_name (column_name_1)
+
+-- common table expressions
+
+-- create views
+-- create view view_name as 
+-- select column_name_1, column_name_2, column_name_3, ...
+-- from table_name
+-- where condition = ?	
