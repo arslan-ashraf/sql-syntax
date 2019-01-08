@@ -53,10 +53,10 @@ select a.column_name_1, ... from table_name_foo as a
 union -- same number of column names
 select b.column_name_2, ... from table_name_bar as b
 
--- create index
--- create index index_name on table_name (column_name_1)
+create index
+create index index_name on table_name (column_name_1)
 
--- common table expressions
+common table expressions
 
 -- create views
 -- create view view_name as 
