@@ -58,8 +58,11 @@ create index index_name on table_name (column_name_1)
 
 common table expressions
 
--- create views
--- create view view_name as 
--- select column_name_1, column_name_2, column_name_3, ...
--- from table_name
--- where condition = ?	
+create views
+create view view_name as 
+select column_name_1, column_name_2, column_name_3, ...
+from table_name
+where condition = ?	
+
+-- create store procedure
+-- create sp_store_procedure_name 
