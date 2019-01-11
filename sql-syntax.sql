@@ -66,3 +66,6 @@ where condition = ?
 
 -- create store procedure
 -- create sp_store_procedure_name 
+
+-- create function
+-- create fn_function_name
