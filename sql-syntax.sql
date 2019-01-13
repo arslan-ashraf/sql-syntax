@@ -64,8 +64,8 @@ select column_name_1, column_name_2, column_name_3, ...
 from table_name
 where condition = ?	
 
--- create store procedure
--- create sp_store_procedure_name 
+create store procedure
+create sp_store_procedure_name 
 
 -- create function
 -- create fn_function_name
