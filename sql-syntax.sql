@@ -64,8 +64,21 @@ select column_name_1, column_name_2, column_name_3, ...
 from table_name
 where condition = ?	
 
-create store procedure
-create sp_store_procedure_name 
+-- create store procedure
+create procedure sp_store_procedure_name @variable int
+as
+begin
+sql_query go
+end;
 
-create function
-create fn_function_name
+execute sp_store_procedure_name;
+
+-- create function
+create function fn_function_name @variable int, @variable_str char(50)
+returns int 
+as
+begin
+sql_query
+end
+
+-- execute fn_function_name(number, 'string')
