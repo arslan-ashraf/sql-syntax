@@ -81,4 +81,4 @@ begin
 sql_query
 end
 
--- execute fn_function_name(number, 'string')
+execute fn_function_name(number, 'string')
