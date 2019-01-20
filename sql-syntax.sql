@@ -82,3 +82,8 @@ sql_query
 end
 
 execute fn_function_name(number, 'string')
+
+-- subqueries
+select column_name_1 from possible_subquery_table_here;
+select column_name_1 from table_name_foo as a 
+join possible_subquery_table_here as b on a.column_name_1 = b.column_name_1
