@@ -58,7 +58,11 @@ create index index_name on table_name (column_name_1)
 
 common table expressions
 
-create views
+-- create views
+-- view is a virtual table that provides all the same features of a normal query
+-- it is not an actual table that gets created, a new query is run every time a view is called
+-- one of its main benefits is that someone who shouldn't have access to a database can still
+-- run a single query 
 create view view_name as 
 select column_name_1, column_name_2, column_name_3, ...
 from table_name
@@ -68,7 +72,7 @@ where condition = ?
 create procedure sp_store_procedure_name @variable int
 as
 begin
-sql_query go
+sql_query_here go
 end;
 
 execute sp_store_procedure_name;
@@ -78,7 +82,7 @@ create function fn_function_name @variable int, @variable_str char(50)
 returns int 
 as
 begin
-sql_query
+sql_query_here
 end
 
 execute fn_function_name(number, 'string')
