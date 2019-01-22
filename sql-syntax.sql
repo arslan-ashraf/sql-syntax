@@ -68,6 +68,12 @@ select column_name_1, column_name_2, column_name_3, ...
 from table_name
 where condition = ?	
 
+-- update or create new view
+create or replace view view_name as 
+select column_name_1, column_name_2, column_name_3, ...
+from table_name
+where condition = ?		
+
 -- create store procedure
 create procedure sp_store_procedure_name @variable int
 as
