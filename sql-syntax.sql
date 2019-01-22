@@ -56,7 +56,13 @@ select b.column_name_2, ... from table_name_bar as b
 create index
 create index index_name on table_name (column_name_1)
 
-common table expressions
+-- common table expressions
+-- acts much like a table 
+with cte_name_of_common_table_expression (column_name_1, column_name_2)
+as (select column_name_1, column_name_2 from table_name_foo)
+
+-- calling common table expressions
+-- select column_name_1, column_name_2 from cte_name_of_common_table_expression
 
 -- create views
 -- view is a virtual table that provides all the same features of a normal query
