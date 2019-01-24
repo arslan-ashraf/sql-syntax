@@ -62,7 +62,7 @@ with cte_name_of_common_table_expression (column_name_1, column_name_2)
 as (select column_name_1, column_name_2 from table_name_foo)
 
 -- calling common table expressions
--- select column_name_1, column_name_2 from cte_name_of_common_table_expression
+select column_name_1, column_name_2 from cte_name_of_common_table_expression
 
 -- create views
 -- view is a virtual table that provides all the same features of a normal query
