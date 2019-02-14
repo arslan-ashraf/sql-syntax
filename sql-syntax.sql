@@ -90,6 +90,7 @@ end;
 execute sp_store_procedure_name;
 
 -- create function
+-- function always returns something where a store procedure does not
 create function fn_function_name @variable int, @variable_str char(50)
 returns int 
 as
