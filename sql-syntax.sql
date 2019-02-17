@@ -111,3 +111,19 @@ execute fn_function_name(number, 'string')
 select column_name_1 from possible_subquery_table_here;
 select column_name_1 from table_name_foo as a 
 join possible_subquery_table_here as b on a.column_name_1 = b.column_name_1
+
+-- row number
+-- this is a built in sql function thats used for ranking data
+-- select 
+-- column_name_1, 
+-- column_name_2, 
+-- column_name_3,
+-- row_number() over (order by column_name_1 desc),
+-- from table_name_foo
+
+-- -- dense rank
+-- select
+-- column_name_1,
+-- column_name_3,
+-- dense_rank() over (order by column_name_3),
+-- from table_name_foo
