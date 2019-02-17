@@ -41,6 +41,13 @@ where column_name_1 in (list of values or table from subquery)
 other conditions
 between, wildcards
 
+-- group by clause
+-- this clause collects all data by the grouped column name 
+select column_name_1, show_some_result_from_grouped_column_name
+from table_name_foo
+where column_name_2 > condition
+group by column_name_1
+
 -- joins
 select a.column_name_1, b.column_name_2 
 from table_name_foo as a join table_name_bar as b
