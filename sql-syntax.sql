@@ -127,3 +127,6 @@ column_name_1,
 column_name_3,
 dense_rank() over (order by column_name_3),
 from table_name_foo
+
+-- create index on a specific column name
+create index index_name 
